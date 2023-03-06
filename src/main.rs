@@ -13,8 +13,7 @@ fn main() {
             .read_line(&mut answer)
             .expect("failed to read line");
 
-        if answer.len() == 3 && &answer[0..1].to_lowercase() == "y"
-        {
+        if answer.trim().to_lowercase() == "y" {
             println!("Please insert a sentence");
             let mut s = String::new();
             io::stdin()
